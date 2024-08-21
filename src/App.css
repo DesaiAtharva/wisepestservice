@@ -1,0 +1,134 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Header */
+  .header {
+    /* background: url('header-image.jpg') no-repeat center center; */
+    background-size: cover;
+    padding: 50px;
+    color: white;
+    text-align: center;
+  }
+  
+  .header h1 {
+    font-size: 48px;
+  }
+  
+  .header p {
+    font-size: 24px;
+  }
+  
+  .call-btn {
+    margin-right: 10px;
+  }
+  
+  /* Services Section */
+  .services {
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 36px;
+  }
+  
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  .service-card {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    padding: 50px;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .testimonial-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .footer-info {
+    margin-bottom: 20px;
+  }
+  
+  .callback-form input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  .callback-form button {
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .header h1 {
+      font-size: 36px;
+    }
+  
+    .header p {
+      font-size: 18px;
+    }
+  
+    .services h2, .testimonials h2 {
+      font-size: 28px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header h1 {
+      font-size: 28px;
+    }
+  
+    .header p {
+      font-size: 16px;
+    }
+  
+    .service-grid, .testimonial-grid {
+      grid-template-columns: 1fr;
+    }
+  }
