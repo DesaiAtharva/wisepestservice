@@ -1,147 +1,147 @@
-body {
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .service-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 30px;
-    background-color: #f4f7f6;
-  }
-  
-  .service-card {
-    background-color: #fff;
-    border-radius: 16px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    padding: 25px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-  }
-  
-  .service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-  }
-  
-  .service-icon {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
-    border-radius: 50%;
-    background-color: #e6f4f1;
-    padding: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* General Layout for Service Grid */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create exactly 3 columns */
+  gap: 20px;
+  padding: 40px;
+  background-color: #edf6f9; /* Background to match navbar style */
 }
 
-.service-icon:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+/* Service Card Styling */
+.service-card {
+  background-color: white;
+  border: 2px solid #006d77; /* Border color matching the navbar */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
 }
-  
-  h3 {
-    font-size: 20px;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 12px;
+
+/* Service Card Hover Effect */
+.service-card:hover {
+  transform: translateY(-10px); /* Lifts the card on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds a deeper shadow on hover */
+  border-color: #83c5be; /* Changes border color to lighter teal */
+}
+
+/* Service Icon Styling */
+.service-icon {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 4px solid #006d77; /* Match border with navbar */
+}
+
+/* Service Title */
+.service-card h3 {
+  font-size: 1.5rem;
+  color: #006d77; /* Same color as the navbar */
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Service Description */
+.service-card p {
+  font-size: 1rem;
+  color: #457b9d; /* Slightly lighter color for text */
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+/* Optional Book Button */
+.book-service-btn {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-service-btn:hover {
+  background-color: #d64545;
+}
+
+/* Responsive Media Queries */
+
+/* Tablets and small laptops (up to 1024px) */
+@media (max-width: 1024px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr); /* Switch to 2-column layout */
+    padding: 30px;
   }
-  
-  p {
-    font-size: 14px;
-    color: #666;
-    line-height: 1.6;
+
+  .service-card {
+    padding: 20px 15px;
   }
-  
+
+  .service-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .service-card p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile phones (up to 768px) */
+@media (max-width: 768px) {
+  .service-grid {
+    grid-template-columns: 1fr; /* Switch to 1-column layout */
+    padding: 20px;
+  }
+
+  .service-card {
+    padding: 20px 10px;
+  }
+
+  .service-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .service-card p {
+    font-size: 0.9rem;
+  }
+
+  .service-icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Extra small devices (up to 480px) */
+@media (max-width: 480px) {
+  .service-grid {
+    grid-template-columns: 1fr; /* 1-column layout */
+    gap: 15px; /* Reduce gap between items */
+  }
+
+  .service-card {
+    padding: 15px;
+  }
+
+  .service-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .service-card p {
+    font-size: 0.85rem;
+  }
+
+  .service-icon {
+    width: 70px;
+    height: 70px;
+  }
+
   .book-service-btn {
-    background-color: #d9534f;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 25px;
-    cursor: pointer;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: background-color 0.3s ease;
+    padding: 8px 15px;
+    font-size: 0.9rem;
   }
-  
-  .book-service-btn:hover {
-    background-color: #c9302c;
-  }
-  
-  /* Media Queries for Responsive Design */
-  
-  /* Large screens (desktops) */
-  @media (min-width: 1200px) {
-    .service-grid {
-      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-      gap: 25px;
-      padding: 50px;
-    }
-    
-    h3 {
-      font-size: 24px;
-    }
-  
-    p {
-      font-size: 16px;
-    }
-    
-    .book-service-btn {
-      padding: 12px 20px;
-    }
-  }
-  
-  /* Medium screens (tablets) */
-  @media (min-width: 768px) and (max-width: 1199px) {
-    .service-grid {
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 15px;
-    }
-  
-    .service-card {
-      padding: 20px;
-    }
-  
-    h3 {
-      font-size: 18px;
-    }
-  
-    p {
-      font-size: 14px;
-    }
-  
-    .book-service-btn {
-      padding: 8px 15px;
-    }
-  }
-  
-  /* Small screens (phones) */
-  @media (max-width: 767px) {
-    .service-grid {
-      grid-template-columns: 1fr;
-      gap: 10px;
-      padding: 20px;
-    }
-  
-    .service-card {
-      padding: 15px;
-    }
-  
-    h3 {
-      font-size: 16px;
-    }
-  
-    p {
-      font-size: 12px;
-    }
-  
-    .book-service-btn {
-      padding: 6px 12px;
-    }
-  }
+}

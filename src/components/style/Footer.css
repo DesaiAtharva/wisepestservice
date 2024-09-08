@@ -1,51 +1,65 @@
-body {
-    font-family: 'Arial', sans-serif;
-  }
-  
+/* General Footer Styling */
+.footer {
+  background-color: #006d77; /* Matching the navbar background color */
+  color: #edf6f9; /* Light text color for contrast */
+  padding: 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+/* Social Icons Styling */
+.social-icons {
+  margin-bottom: 15px;
+}
+
+.social-link {
+  margin: 0 10px;
+  color: #edf6f9; /* Same light color as the text */
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #ff6b6b; /* Hover color for icons - bright red to make it stand out */
+}
+
+/* Footer Credits */
+.footer-credits p {
+  margin: 0;
+  font-size: 1rem;
+  color: #edf6f9; /* Same light color as other text */
+}
+
+.footer-credits strong {
+  color: #ff6b6b; /* Highlight 'D Clan' in red for emphasis */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
   .footer {
-    background-color: #333;
-    padding: 10px 0;
-    text-align: center;
-    color: #fff;
-    position: relative;
+    padding: 15px;
   }
-  
-  .social-icons {
-    margin-bottom: 20px;
-  }
-  
+
   .social-link {
-    margin: 0 15px;
-    color: #fff;
-    font-size: 24px;
-    transition: color 0.3s ease;
+    font-size: 1.2rem; /* Slightly reduce icon size on smaller screens */
   }
-  
-  .social-link:hover {
-    color: #f1c40f;
-  }
-  
-  .footer-credits {
-    font-size: 16px;
-  }
-  
-  .footer-credits strong {
-    color: #f1c40f;
-  }
-  
+
   .footer-credits p {
-    margin: 0;
-    padding: 0;
+    font-size: 0.9rem;
   }
-  
-  /* Media Queries for Responsive Design */
-  @media (max-width: 767px) {
-    .social-link {
-      font-size: 20px;
-      margin: 0 10px;
-    }
-  
-    .footer-credits {
-      font-size: 14px;
-    }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 10px;
   }
+
+  .social-link {
+    font-size: 1rem;
+  }
+
+  .footer-credits p {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,73 @@
+/* General Section Styling */
+.why-us-section {
+    background-color: #edf6f9; /* Match the navbar background color */
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .why-us-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #006d77; /* Same color as navbar text */
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+  
+  /* Grid Layout */
+  .why-us-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .why-us-item {
+    background-color: #ffffff;
+    border: 2px solid #006d77; /* Match the navbar border color */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .why-us-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .why-us-icon {
+    font-size: 3rem;
+    color: #006d77; /* Same color as the navbar */
+    margin-bottom: 20px;
+  }
+  
+  /* Text Styling */
+  .why-us-item p {
+    font-size: 1.1rem;
+    color: #457b9d; /* Slightly lighter blue for text */
+    margin-top: 10px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .why-us-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+  
+    .why-us-heading {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .why-us-grid {
+      grid-template-columns: 1fr; /* 1 column on mobile */
+    }
+  
+    .why-us-heading {
+      font-size: 1.5rem;
+    }
+  }
+  
