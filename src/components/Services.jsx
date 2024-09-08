@@ -8,7 +8,7 @@ import mosquitoImg from "../Assets/mosquito.jpg";
 
 const Services = () => {
   const handleCallClick = () => {
-    const phoneNumber = "+917738305484"; // Replace with your actual phone number
+    const phoneNumber = "+918169667495"; // Replace with your actual phone number
     window.location.href = `tel:${phoneNumber}`;
   };
 
