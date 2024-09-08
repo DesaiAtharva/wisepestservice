@@ -91,22 +91,6 @@ body, html {
   box-shadow: 0 10px 20px rgba(230, 57, 70, 0.5);
 }
 
-/* Promo Section Styling */
-.promo-section {
-  background-color: #006d77;
-  color: #edf6f9;
-  padding: 20px;
-  text-align: center;
-}
-
-.scrolling-text p {
-  font-size: 1.3rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: scroll-left 10s linear infinite;
-}
 
 /* Base styling for the promo section */
 .promo-section {
@@ -122,7 +106,7 @@ body, html {
   letter-spacing: 1px;
   white-space: nowrap;
   overflow: hidden;
-  animation: scroll-left 10s linear infinite;
+  /* animation: scroll-left 10s linear infinite; */
 }
 
 /* Media Query for Tablets (768px and below) */
